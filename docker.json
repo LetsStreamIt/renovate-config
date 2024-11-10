@@ -22,7 +22,10 @@
                 "tagMatch": [
                     "latest",
                     "main"
-                ]
+                ],
+                "digest": {
+                    "enabled": false
+                }
             }
         }
     ],
