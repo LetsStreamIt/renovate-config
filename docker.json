@@ -11,16 +11,24 @@
                 "docker-compose.yaml"
             ],
             "semanticCommitScope": "core-deps"
+        },
+        {
+            "description": "Ensure Renovate checks for latest and main tags",
+            "matchDatasources": [
+                "docker"
+            ],
+            "docker": {
+                "tagMatch": [
+                    "latest",
+                    "main"
+                ]
+            }
         }
     ],
     "hostRules": [
         {
             "matchHost": "ghcr.io",
-            "hostType": "docker",
-            "tagMatch": [
-                "latest",
-                "main"
-            ]
+            "hostType": "docker"
         }
     ]
 }
