@@ -12,5 +12,11 @@
             ],
             "semanticCommitScope": "core-deps"
         }
+    ],
+    "hostRules": [
+        {
+            "matchHost": "ghcr.io",
+            "hostType": "docker"
+        }
     ]
 }
