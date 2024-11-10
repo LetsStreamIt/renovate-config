@@ -5,7 +5,7 @@
     ],
     "packageRules": [
         {
-            "description": "Trigger a patch update if any Dockerfile gets updated",
+            "description": "Trigger a patch update if any docker-compose gets updated",
             "matchPaths": [
                 "docker-compose.yml",
                 "docker-compose.yaml"
