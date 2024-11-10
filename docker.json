@@ -1,39 +1,11 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-        "github>letsstreamit/renovate-config"
-    ],
-    "packageRules": [
-        {
-            "description": "Trigger a patch update if any docker-compose gets updated",
-            "matchPaths": [
-                "docker-compose.yml",
-                "docker-compose.yaml"
-            ],
-            "semanticCommitScope": "core-deps"
-        },
-        {
-            "description": "Ensure Renovate checks for latest and main tags",
-            "matchDatasources": [
-                "docker-compose",
-                "docker"
-            ],
-            "docker-compose": {
-                "tagMatch": [
-                    "latest",
-                    "main"
-                ],
-                "digest": {
-                    "enabled": false
-                }
-            },
-            "versioning": "loose"
-        }
-    ],
-    "hostRules": [
-        {
-            "matchHost": "ghcr.io",
-            "hostType": "docker"
-        }
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>letsstreamit/renovate-config"],
+  "packageRules": [
+    {
+      "description": "Trigger a patch update if any docker-compose gets updated",
+      "matchPaths": ["docker-compose.yml", "docker-compose.yaml"],
+      "semanticCommitScope": "core-deps"
+    }
+  ]
 }
