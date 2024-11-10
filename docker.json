@@ -26,7 +26,8 @@
                 "digest": {
                     "enabled": false
                 }
-            }
+            },
+            "versioning": "loose"
         }
     ],
     "hostRules": [
