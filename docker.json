@@ -15,9 +15,10 @@
         {
             "description": "Ensure Renovate checks for latest and main tags",
             "matchDatasources": [
+                "docker-compose",
                 "docker"
             ],
-            "docker": {
+            "docker-compose": {
                 "tagMatch": [
                     "latest",
                     "main"
